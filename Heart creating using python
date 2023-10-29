@@ -1,0 +1,28 @@
+import turtle as t
+
+# Create a turtle object
+heart = t.Turtle()
+
+# Set the fill color and pen color
+heart.fillcolor('red')
+heart.pencolor('red')
+
+# Start filling the shape
+heart.begin_fill()
+
+# Draw the left half of the heart
+heart.left(140)
+heart.forward(224)
+for _ in range(200):
+    heart.right(1)
+    heart.forward(2)
+
+# Draw the right half of the heart
+for _ in range(200):
+    heart.right(1)
+    heart.forward(2)
+heart.forward(224)
+
+# End filling and display the heart
+heart.end_fill()
+t.done()
